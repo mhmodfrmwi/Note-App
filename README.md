@@ -1,8 +1,3 @@
-# React + Vite
+# Note App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+NoteApp is a sleek and intuitive digital notebook designed to help you organize your thoughts, tasks, and ideas seamlessly. Whether you’re a student, professional, or just someone who loves to jot down ideas, NoteApp offers the perfect solution to keep all your notes in one place, accessible anytime and anywhere.
