@@ -1,0 +1,76 @@
+.notes {
+  display: flex;
+  flex-direction: column;
+  width: 322px;
+  height: 2068px;
+  padding: 20px 0 0 20px;
+  left: 258px;
+  gap: 2rem;
+  opacity: 0px;
+}
+.logo {
+  width: 49px;
+  height: 20px;
+  top: 48px;
+  gap: 0px;
+  opacity: 0px;
+}
+.Card {
+  width: 266px;
+  height: 125px;
+  gap: 0px;
+  opacity: 0px;
+  padding: 0 0 0 1.5rem;
+}
+.bottom__container {
+  display: flex;
+  gap: 8rem;
+}
+.card__title {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  color: #303030;
+}
+.card__description {
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #898989;
+}
+.card__date {
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #898989;
+}
+.card__button {
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #d82700;
+  cursor: pointer;
+}
+.notes_header {
+  width: 322px;
+  height: 36px;
+  border-top: 1px solid #e7e7e9;
+  border-bottom: 1px solid #e7e7e9;
+}
+.notes_header__title {
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  margin: 8px 0 0 20px;
+  color: #ec7160;
+}

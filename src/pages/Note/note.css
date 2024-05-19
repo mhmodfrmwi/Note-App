@@ -1,0 +1,30 @@
+.note {
+  display: flex;
+}
+.note__content {
+  position: absolute;
+  width: 608px;
+  top: 114px;
+  left: 679px;
+  gap: 0px;
+  opacity: 0px;
+}
+.add__button {
+  width: 65px;
+  height: 65px;
+  gap: 0px;
+  border-radius: 32.5px;
+  opacity: 0px;
+  font-size: 65px;
+  color: #ffff;
+  background-color: #ec7160;
+  border: none;
+  align-content: center;
+}
+.plus__button {
+  width: 65px;
+  height: 65px;
+  border-radius: 32.5px;
+  cursor: pointer;
+  margin-top: 20px;
+}

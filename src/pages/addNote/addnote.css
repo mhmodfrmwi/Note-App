@@ -1,0 +1,64 @@
+.addnote {
+  position: absolute;
+  width: 600px;
+  height: 554px;
+  top: 114px;
+  left: 461px;
+  gap: 10px;
+  opacity: 0px;
+  display: flex;
+  flex-direction: column;
+}
+input,
+textarea {
+  background-color: #f6f6f6;
+  border: none;
+}
+#title {
+  width: 500px;
+  height: 45px;
+
+  gap: 0px;
+  border-radius: 7px;
+  opacity: 0px;
+}
+#author {
+  width: 500px;
+  height: 71px;
+  gap: 0px;
+  border-radius: 7px;
+  opacity: 0px;
+}
+#note {
+  width: 500px;
+  height: 179px;
+  gap: 0px;
+  border-radius: 7px;
+  opacity: 0px;
+}
+.add_pinned,
+.add_note {
+  width: 104px;
+  height: 40px;
+  top: 628px;
+  left: 592px;
+  gap: 0px;
+  border: none;
+  border-radius: 5px;
+  opacity: 0px;
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  background-color: #ec7160;
+  color: #ffffff;
+  text-align: center;
+}
+.buttons__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
