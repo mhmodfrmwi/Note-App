@@ -4,34 +4,33 @@ import Sidebar from "../../component/Sidebar/Sidebar";
 import "./note.css";
 import { Images } from "../../lib/images";
 function Note() {
-  const params = useParams();
+  let { noteId } = useParams();
+  console.log(noteId);
+  const dataString = localStorage.getItem("notes");
+  const data = JSON.parse(dataString);
+  console.log(data);
+  let note = data.find((element) => element.id === +noteId);
+  console.log(note);
   return (
     <div className="note">
       <Sidebar />
       <Notes />
-      <div className="note__content">
-        <h1 className="note__title">Business Partners Work at Modern Office</h1>
-        <p className="date__author">Feb 8, 2021 / By Yousef</p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit. Sed at arcu dui. Lorem
-          ipsum dolor sit amet, consectetur adipisce placerat mauris nisl. Proin
-          vitae urna eu sem pellentesque laoreet.
-        </p>
-        <Link to={"/addnote"}>
-          <img
-            src={Images.plusButton[0]}
-            alt="Plus Button"
-            className="plus__button"
-          />
-        </Link>
-      </div>
+      {note && (
+        <div className="note__content">
+          <h1 className="note__title">{note.title}</h1>
+          <p className="date__author">
+            {note.date} / By {note.author}
+          </p>
+          <p>{note.content}</p>
+          <Link to={"/addnote"}>
+            <img
+              src={Images.plusButton[0]}
+              alt="Plus Button"
+              className="plus__button"
+            />
+          </Link>
+        </div>
+      )}
     </div>
   );
 }

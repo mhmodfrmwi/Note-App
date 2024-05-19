@@ -3,13 +3,6 @@
   "style": "default",
   "rsc": true,
   "tsx": false,
-  "tailwind": {
-    "config": "tailwind.config.js",
-    "css": "index.css",
-    "baseColor": "neutral",
-    "cssVariables": true,
-    "prefix": ""
-  },
   "aliases": {
     "components": "@/components",
     "utils": "@/lib/utils"

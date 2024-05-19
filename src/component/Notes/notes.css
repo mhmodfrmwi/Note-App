@@ -3,10 +3,11 @@
   flex-direction: column;
   width: 322px;
   height: 2068px;
-  padding: 20px 0 0 20px;
+  margin-top: 20px;
   left: 258px;
-  gap: 2rem;
   opacity: 0px;
+  transition: ease-in-out 0.3s;
+  border-right: 1px solid #e7e7e9;
 }
 .logo {
   width: 49px;
@@ -14,13 +15,22 @@
   top: 48px;
   gap: 0px;
   opacity: 0px;
+  padding: 20px 0 0 20px;
 }
 .Card {
   width: 266px;
-  height: 125px;
+  height: 150px;
   gap: 0px;
   opacity: 0px;
-  padding: 0 0 0 1.5rem;
+  padding: 5px 0 0 1.5rem;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+}
+.Card:hover {
+  background-color: #f6f6f6;
+
+  transition: ease-in-out 0.3s;
+  border-radius: 10px;
 }
 .bottom__container {
   display: flex;
@@ -62,8 +72,10 @@
 .notes_header {
   width: 322px;
   height: 36px;
+  padding-right: 20px;
   border-top: 1px solid #e7e7e9;
   border-bottom: 1px solid #e7e7e9;
+  margin-top: 20px;
 }
 .notes_header__title {
   font-family: Inter;
