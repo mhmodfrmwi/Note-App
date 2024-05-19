@@ -2,7 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import Notes from "../../component/Notes/Notes";
 import Sidebar from "../../component/Sidebar/Sidebar";
 import "./note.css";
-import { Images } from "../../lib/images";
+import plusButton from "/src/assets/Vector.svg";
 function Note() {
   let { noteId } = useParams();
   console.log(noteId);
@@ -23,11 +23,7 @@ function Note() {
           </p>
           <p>{note.content}</p>
           <Link to={"/addnote"}>
-            <img
-              src={Images.plusButton[0]}
-              alt="Plus Button"
-              className="plus__button"
-            />
+            <img src={plusButton} alt="Plus Button" className="plus__button" />
           </Link>
         </div>
       )}

@@ -3,8 +3,6 @@ import { Link, useNavigate } from "react-router-dom";
 import "./sidebar.css";
 import { useState } from "react";
 import fetchFromDatabase from "../../lib/utils/fetchFromDatabase";
-import FetchNotes from "../Notes/FetchNotes";
-import Note from "../../pages/Note/Note";
 function Sidebar() {
   const [search, setSearch] = useState("");
   const navigate = useNavigate();
