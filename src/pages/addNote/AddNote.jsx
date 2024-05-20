@@ -54,7 +54,7 @@ function AddNote() {
     saveToDatabase("notes", Notes);
   };
   return (
-    <>
+    <div className="addNoteContainer">
       <Sidebar />
       <form onSubmit={handleSubmit} className="addnote">
         <h1>Add Note</h1>
@@ -79,7 +79,7 @@ function AddNote() {
           </button>
         </div>
       </form>
-    </>
+    </div>
   );
 }
 export default AddNote;

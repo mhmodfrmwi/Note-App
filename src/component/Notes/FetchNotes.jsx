@@ -15,7 +15,9 @@ function FetchNotes() {
         <div
           className="Card"
           key={note.id}
-          onClick={() => navigate(`/note/${note.id}`)}
+          onClick={() => {
+            navigate(`/note/${note.id}`);
+          }}
         >
           <h2 className="card__title">{note.title}</h2>
           <p className="card__description">{note.content.slice(0, 60)}</p>

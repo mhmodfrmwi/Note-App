@@ -18,26 +18,34 @@ function Sidebar() {
     filteredNotes.length && navigate(`/note/${+filteredNotes[0].id}`);
   };
   return (
-    <div className="sidebar">
-      <h1 className="logo">Almdrasa-Notes</h1>
-      <Form className="d-flex" onSubmit={handleSubmit}>
-        <Form.Control
-          type="search"
-          placeholder="Search"
-          className=" search-field"
-          aria-label="Search"
-          onChange={handleSearch}
-        />
-      </Form>
-      <div className="links__container">
-        <Link to={"/"} className="link">
-          Notes
-        </Link>
-        <Link to={"/addnote"} className="link">
-          Add Note
-        </Link>
+    <>
+      <input type="checkbox" className="input" id="myCheckbox" />
+      <label className="toggle" htmlFor="myCheckbox">
+        <div className="top__line common"></div>
+        <div className="middle__line common"></div>
+        <div className="bottom__line common"></div>
+      </label>
+      <div className="sidebar">
+        <h1 className="logo">Almdrasa-Notes</h1>
+        <Form className="d-flex" onSubmit={handleSubmit}>
+          <Form.Control
+            type="search"
+            placeholder="Search"
+            className=" search-field"
+            aria-label="Search"
+            onChange={handleSearch}
+          />
+        </Form>
+        <div className="links__container">
+          <Link to={"/"} className="link">
+            Notes
+          </Link>
+          <Link to={"/addnote"} className="link">
+            Add Note
+          </Link>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 export default Sidebar;

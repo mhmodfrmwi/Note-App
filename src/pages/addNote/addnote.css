@@ -1,13 +1,14 @@
+.addNoteContainer {
+  display: flex;
+}
 .addnote {
-  position: absolute;
   width: 600px;
   height: 554px;
-  top: 114px;
-  left: 461px;
   gap: 10px;
   opacity: 0px;
   display: flex;
   flex-direction: column;
+  margin: 5rem;
 }
 input,
 textarea {
@@ -61,4 +62,17 @@ textarea {
   align-items: center;
   gap: 10px;
   margin-top: 10px;
+}
+@media (max-width: 768px) {
+  .addnote {
+    margin: 0 auto;
+    padding: 3rem;
+  }
+  .add_note {
+    width: 100%;
+  }
+  .add_pinned,
+  .add_note {
+    width: 200px;
+  }
 }
